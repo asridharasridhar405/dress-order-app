@@ -18,7 +18,7 @@ function renderCatalog() {
     const card = document.createElement('div');
     card.className = 'card';
     card.innerHTML = `
-      <img src="${item.img}" alt="${item.title}" />
+      <image src="${item.image}" alt="${item.title}" />
       <div class="title">${item.title}</div>
       <div class="price">₹ ${item.price.toLocaleString()}</div>
       <div style="display:flex;gap:8px;margin-top:6px">
