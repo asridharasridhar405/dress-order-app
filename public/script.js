@@ -1,9 +1,9 @@
 // ✅ Corrected catalog with img property + <img> tag
 const catalog = [
-  { id: 'dress1', title: 'Floral Summer Dress', price: 1200, img: 'img/floral.jpg' },
-  { id: 'dress2', title: 'Elegant Evening Gown', price: 3500, img: 'img/elegant.jpg' },
-  { id: 'dress3', title: 'Casual Shirt Dress', price: 900, img: 'img/casuals.jpg' },
-  { id: 'dress4', title: 'Denim Midi Dress', price: 1500, img: 'img/denim.jpg' }
+  { id: 'dress1', title: 'Summer Dress', price: 1200, img: 'img/floral.jpg' },
+  { id: 'dress2', title: ' Evening Gown', price: 3500, img: 'img/elegant.jpg' },
+  { id: 'dress3', title: ' Shirt Dress', price: 900, img: 'img/casuals.jpg' },
+  { id: 'dress4', title: ' Midi Dress', price: 1500, img: 'img/denim.jpg' }
 ];
 
 function $(sel) { return document.querySelector(sel); }
