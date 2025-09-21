@@ -1,9 +1,9 @@
 // Simple catalog data (client-side). You can move this to server later.
 const catalog = [
-  { id: 'dress1', title: 'Floral Summer Dress', price: 1200, img: 'https://images.unsplash.com/photo-1520975917199-5e3be3ddf3d0?auto=format&fit=crop&w=800&q=60' },
-  { id: 'dress2', title: 'Elegant Evening Gown', price: 3500, img: 'https://images.unsplash.com/photo-1495121605193-b116b5b09b61?auto=format&fit=crop&w=800&q=60' },
-  { id: 'dress3', title: 'Casual Shirt Dress', price: 900, img: 'https://images.unsplash.com/photo-1530845641377-0b1f3b3a1d1d?auto=format&fit=crop&w=800&q=60' },
-  { id: 'dress4', title: 'Denim Midi Dress', price: 1500, img: 'https://images.unsplash.com/photo-1582457322472-0a8f5a9e3e4b?auto=format&fit=crop&w=800&q=60' }
+  { id: 'dress1', title: 'Floral Summer Dress', price: 1200, img: 'img/floral.jpg' },
+  { id: 'dress2', title: 'Elegant Evening Gown', price: 3500, img: 'img/elegant.jpg' },
+  { id: 'dress3', title: 'Casual Shirt Dress', price: 900, img: 'img/casuals.jpg' },
+  { id: 'dress4', title: 'Denim Midi Dress', price: 1500, img: 'img/denim.jpg' }
 ];
 
 function $(sel) { return document.querySelector(sel); }
