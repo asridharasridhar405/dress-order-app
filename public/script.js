@@ -1,9 +1,9 @@
 // Simple catalog data (client-side). You can move this to server later.
 const catalog = [
-  { id: 'dress1', title: 'Floral Summer Dress', price: 1200, Image: "img/floral.jpg" },
-  { id: 'dress2', title: 'Elegant Evening Gown', price: 3500, Image: "img/elegant.jpg" },
-  { id: 'dress3', title: 'Casual Shirt Dress', price: 900, Image: "img/casuals.jpg" },
-  { id: 'dress4', title: 'Denim Midi Dress', price: 1500, Image: "img/denim.jpg" }
+  { id: 'dress1', title: 'Floral Summer Dress', price: 1200, Image: "floral.jpg" },
+  { id: 'dress2', title: 'Elegant Evening Gown', price: 3500, Image: "elegant.jpg" },
+  { id: 'dress3', title: 'Casual Shirt Dress', price: 900, Image: "casuals.jpg" },
+  { id: 'dress4', title: 'Denim Midi Dress', price: 1500, Image: "denim.jpg" }
 ];
 
 function $(sel) { return document.querySelector(sel); }
