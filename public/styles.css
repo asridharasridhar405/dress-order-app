@@ -1,0 +1,87 @@
+:root {
+  --maxw: 980px;
+  --accent: #6b2cff;
+  --muted: #666;
+}
+
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: #181818;
+  background: #fafafa;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.container {
+  max-width: var(--maxw);
+  margin: 18px auto;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 20px;
+}
+
+header { text-align: center; }
+h1 { margin: 6px 0; }
+.subtitle { color: var(--muted); margin-top: 0; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+  gap: 12px;
+}
+
+.card {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(30,30,30,0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.card img { width: 100%; height: 150px; object-fit: cover; border-radius: 6px; }
+
+.card .title { font-weight: 600; font-size: 15px; }
+.card .price { color: var(--accent); font-weight: 700; }
+
+button {
+  appearance: none;
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: var(--accent);
+  color: white;
+  font-weight: 700;
+}
+
+#order form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(30,30,30,0.04);
+}
+
+label { display: flex; flex-direction: column; font-size: 14px; gap: 6px; }
+input, textarea, select { padding: 8px; border-radius: 6px; border: 1px solid #ddd; }
+
+.actions { display:flex; gap:8px; justify-content: flex-end; }
+#message { margin-top: 10px; color: green; font-weight: 600; }
+
+.hidden { display: none; }
+
+#ordersList { margin-top: 12px; background: white; padding: 12px; border-radius: 8px; }
+.orderItem { border-bottom: 1px solid #eee; padding: 8px 0; }
+.orderItem:last-child { border-bottom: none; }
+
+footer { text-align:center; margin-top: 22px; color: var(--muted); font-size: 13px; }
+@media (max-width: 900px) {
+  .container { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dress Order — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Dress Ordering</h1>
+    <p class="subtitle">Choose a dress and place your order</p>
+  </header>
+
+  <main class="container">
+    <section id="catalog">
+      <h2>Catalog</h2>
+      <div id="items" class="grid"></div>
+    </section>
+
+    <section id="order">
+      <h2>Place Order</h2>
+      <form id="orderForm">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          Address
+          <textarea name="address" rows="2" required></textarea>
+        </label>
+
+        <label>
+          Selected dress
+          <select name="dressId" required id="dressSelect">
+            <!-- populated by JS -->
+          </select>
+        </label>
+
+        <label>
+          Size
+          <select name="size" required>
+            <option>XS</option><option>S</option><option>M</option><option>L</option><option>XL</option>
+          </select>
+        </label>
+
+        <label>
+          Quantity
+          <input type="number" name="quantity" value="1" min="1" required />
+        </label>
+
+        <label>
+          Notes (optional)
+          <textarea name="notes" rows="2"></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="submit">Place Order</button>
+          <button type="button" id="viewOrdersBtn">View Orders (Admin)</button>
+        </div>
+      </form>
+
+      <div id="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="ordersListSection" class="hidden">
+      <h2>All Orders (Admin)</h2>
+      <button id="closeOrders">Close</button>
+      <div id="ordersList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Demo site — not for production. Built with Node.js + Express.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
